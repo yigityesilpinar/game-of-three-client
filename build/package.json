@@ -1,0 +1,17 @@
+{
+  "name": "gameofthreeclient",
+  "version": "1.0.0",
+  "description": "Game of three Client, Solution application for the lieferando.de assignment",
+  "main": "bundle.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Yigit Yesilpinar <yigityesilpinar@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^1.7.3",
+    "babel-runtime": "^6.3.19",
+    "express": "4.13.4",
+    "serve-favicon": "^2.3.2"
+  }
+}

@@ -1,0 +1,128 @@
+#appMain{
+
+}
+
+#appMain .app-name{
+    text-align: center;
+}
+
+#appMain #gameOfThree{
+    width:50%;
+    margin: 10% 25% 25%;
+    text-align: center;
+}
+
+#appMain div#gameInputs a {
+    display: inline-block;
+    background: aquamarine;
+    padding: 5%;
+    border-radius: 60%;
+    cursor: pointer;
+    color: cornflowerblue;
+    font-size: 2em;
+}
+
+#appMain a#currentNum{
+    display: inline-block;
+    background: lightskyblue;
+    padding: 5%;
+    margin-bottom: 20%;
+    border-radius: 60%;
+    cursor: pointer;
+    color: aquamarine;
+    font-size: 2em;
+}
+
+#appMain div#turnIndicator.your-turn {
+    margin: 0% 25%;
+    text-align: center;
+    padding: 1em;
+    background-color: #3c763d;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+#appMain div#turnIndicator.not-your-turn {
+    margin: 0% 25%;
+    text-align: center;
+    padding: 1em;
+    background-color: #FF4136;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+#appMain div#resultDiv {
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    right: 25%;
+    text-align: center;
+    z-index: 999999999;
+    background-color: #ffffff;
+}
+#appMain #displayResult {
+    font-size: 1.5em;
+    padding: 3em 3em 2.6em;
+}
+#appMain #displayResult.win{
+    color: #3c763d;
+}
+
+#appMain #displayResult.lost{
+    color: #FF4136;
+}
+
+
+.cover-div {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(99,99,99,0.9);
+    top: 0;
+    z-index: 9999;
+    left: 0;
+    filter: blur(0px);
+    /* Firefox */
+    filter: url("blur.svg#gaussian_blur");
+
+    /* Webkit */
+    -webkit-filter: blur(1px);
+
+    /* Opera */
+    -o-filter: blur(2px);
+}
+
+.resultInputs{
+    line-height: 4;
+    background: #ffffff;
+
+}
+.resultInputs a{
+    display: inline-block;
+    width: 50%;
+    font-size: 1.7em;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.resultInputs a.closeBtn {
+    color: #FF4136;
+}
+
+.resultInputs a.rePlayBtn {
+    color: #3c763d;
+}
+
+@media (max-width: 600px) {
+    .resultInputs a{
+        display: block;
+        width: 100%;
+    }
+    #appMain div#resultDiv {
+        left:10%;
+        right: 10%;
+        top: 10%;
+    }
+}
